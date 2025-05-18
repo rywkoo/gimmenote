@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GimmeNote</title>
+  <link rel="stylesheet" href="/src/css/style.css" />
+</head>
+<body>
+
+  <h1>GimmeNote</h1>
+  <p>Visual note linking & brainstorming tool</p>
+
+  <div class="toolbar">
+    <button id="save-btn">💾 Save</button>
+    <button id="load-btn">📂 Load</button>
+  </div>
+
+<div id="viewport" style="width: 100%; height: 90vh; overflow: hidden; position: relative;">
+  <svg id="workspace" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;"></svg>
+  <div id="workspace-content" style="position: absolute; top: 0; left: 0; width: 2000px; height: 2000px;"></div>
+</div>
+
+<!-- Node Search Popup -->
+<div id="node-search-popup">
+  <input type="text" id="node-search-input" placeholder="Search nodes..." />
+  <div id="node-search-results"></div>
+</div>
+  <script type="module" src="/src/js/main.js"></script>
+</body>
+</html>
